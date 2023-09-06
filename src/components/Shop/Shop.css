@@ -4,5 +4,13 @@
 }
 
 .products-container{
-    margin-left: 2%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.products-container img{
+    width: 286px;
+    height: 286px;
 }
