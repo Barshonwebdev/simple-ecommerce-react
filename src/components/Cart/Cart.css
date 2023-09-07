@@ -1,0 +1,9 @@
+.cart-container{
+    background-color: bisque;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-container h4{
+    text-align: center;
+}
