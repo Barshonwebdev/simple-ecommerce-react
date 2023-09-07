@@ -14,10 +14,10 @@ const Cart = (props) => {
       <div className='cart-container'>
         <h4>Order Summary</h4>
         <p>Products added: {cart.length}</p>
-        <p>Total price: $ {totalPrice} </p>
-        <p>Total Shipping Charge: $ {shipping} </p>
-        <p>Tax: $ {tax.toFixed(2)} </p>
-        <h3>Grand Total: $ {grandTotal.toFixed(2)} </h3>
+        <p>Total price: ${totalPrice} </p>
+        <p>Total Shipping Charge: ${shipping} </p>
+        <p>Tax: ${tax.toFixed(2)} </p>
+        <h3>Grand Total: ${grandTotal.toFixed(2)} </h3>
       </div>
     );
 };
