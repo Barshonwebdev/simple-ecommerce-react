@@ -14,3 +14,17 @@
     width: 286px;
     height: 286px;
 }
+
+.review-button{
+    width: 90%;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.review-button:hover{
+     background-color: rgb(255, 153, 0);
+}

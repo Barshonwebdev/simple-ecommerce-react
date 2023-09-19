@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import { addToDb, deleteShoppingCart, getShoppingCart } from "../../../utilities/fakedb";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -57,13 +58,21 @@ const Shop = () => {
   return (
     <div className="shop-container">
       <div className="products-container">
-        {
-            products.map(product=><Product handleCart={handleCart} key={product.id} product={product}></Product>)
-        }
+        {products.map((product) => (
+          <Product
+            handleCart={handleCart}
+            key={product.id}
+            product={product}
+          ></Product>
+        ))}
       </div>
 
       <div>
-        <Cart removeCart={removeCart} cart={cart}></Cart>
+        <Cart removeCart={removeCart} cart={cart}>
+          <Link to="/orders">
+            <button className="review-button">Review Orders</button>
+          </Link>
+        </Cart>
       </div>
     </div>
   );
