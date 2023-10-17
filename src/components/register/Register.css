@@ -1,0 +1,44 @@
+.form-container{
+    height: 350px;
+    width: 250px;
+    border: 1px solid gray;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.form-title{
+    text-align: center;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+.form-control label{
+    display: block;
+    font-size:small;
+}
+
+.form-control input{
+    width: 200px;
+    height: 20px;
+}
+
+.btn-submit{
+    background-color: khaki;
+    width: 210px;
+    height: 35px;
+    display: block;
+    margin-top: 20px;
+    font-size: small;
+}
+
+.errormsg{
+    color: red;
+    margin-bottom: 5px;
+}
+
+p{
+    margin: 0;
+}
